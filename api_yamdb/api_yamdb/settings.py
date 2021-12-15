@@ -15,7 +15,7 @@ if DEBUG:
     ALLOWED_HOSTS = ["*"]
 else:
     ALLOWED_HOSTS = os.getenv(
-        'ALLOWED_HOSTS', default='127.0.0.1 gals.ml www.gals.ml').split(' ')
+        'ALLOWED_HOSTS', default='62.84.118.86 gals.ml www.gals.ml').split(' ')
 
 
 INSTALLED_APPS = [
