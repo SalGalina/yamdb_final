@@ -1,10 +1,11 @@
 import csv
 import os
 
-from api.models import Category, Comment, Genre, Review, Title, User
 from django.conf import settings
 from django.core.management.base import BaseCommand
 from rest_framework.generics import get_object_or_404
+
+from api.models import Category, Comment, Genre, Review, Title, User
 
 # Использование:
 # 1. отредактировать список app_models, теми файлами, которые надо загрузить.

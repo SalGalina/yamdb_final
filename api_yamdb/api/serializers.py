@@ -29,16 +29,14 @@ class UserEmailConfirmationSerializer(serializers.ModelSerializer):
 
     @staticmethod
     def generate_code(validated_data):
-        confirmation_code = uuid.uuid3(
+        return uuid.uuid3(
             uuid.NAMESPACE_OID,
             validated_data['email']
         )
-        return confirmation_code
 
     @staticmethod
     def generate_username(validated_data):
-        username = uuid.uuid3(uuid.NAMESPACE_DNS, validated_data['email'])
-        return username
+        return uuid.uuid3(uuid.NAMESPACE_DNS, validated_data['email'])
 
     def create(self, validated_data):
         user = User(
