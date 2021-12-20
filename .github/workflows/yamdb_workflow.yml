@@ -1,5 +1,5 @@
 # .github/workflows/**yamdb_workflow.yml**
-name: YamDB_final workflow
+name: yamdb_workflow
 
 on: [push]
 

@@ -107,4 +107,4 @@ python manage.py loaddata fixtures.json
 
 Салошина Галина
 
-![yamdb workflow](https://github.com/SalGalina/yamdb_final/actions/workflows/yamdb_workflow/badge.svg)
+![yamdb_workflow](https://github.com/SalGalina/yamdb_final/actions/workflows/yamdb_workflow/badge.svg)
