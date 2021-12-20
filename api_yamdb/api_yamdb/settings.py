@@ -9,14 +9,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv(
     'SECRET_KEY', default='p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs')
 
-DEBUG = os.getenv('DEBUG', default=False)
+DEBUG = os.getenv('DEBUG', default=True)
 
 # if DEBUG:
 ALLOWED_HOSTS = ["*"]
 # else:
-#     ALLOWED_HOSTS = os.getenv(
-#         'ALLOWED_HOSTS', default='62.84.118.86 gals.ml www.gals.ml'
-#    ).split(' ')
+#     ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='["*"]').split(' ')
 
 
 INSTALLED_APPS = [
