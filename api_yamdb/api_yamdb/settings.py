@@ -11,11 +11,12 @@ SECRET_KEY = os.getenv(
 
 DEBUG = os.getenv('DEBUG', default=False)
 
-if DEBUG:
-    ALLOWED_HOSTS = ["*"]
-else:
-    ALLOWED_HOSTS = os.getenv(
-        'ALLOWED_HOSTS', default='62.84.118.86 gals.ml www.gals.ml').split(' ')
+# if DEBUG:
+ALLOWED_HOSTS = ["*"]
+# else:
+#     ALLOWED_HOSTS = os.getenv(
+#         'ALLOWED_HOSTS', default='62.84.118.86 gals.ml www.gals.ml'
+#    ).split(' ')
 
 
 INSTALLED_APPS = [
