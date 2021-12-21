@@ -53,17 +53,21 @@ sudo apt install docker-ce docker-compose -y
 
 ```bash
 #!/bin/bash
-git clone git@github.com:SalGalina/infra_sp2.git
+git clone git@github.com:SalGalina/yamdb_final.git
 ```
 
 - Скачайте образ проекта с DockerHub
 
 ```bash
 #!/bin/bash
-sudo docker pull salgalina/infra_sp2:latest
+sudo docker pull salgalina/yamdb_final:latest
 ```
 
-- В папке с файлом docker-compose.yaml создать и запустить контейнеры:
+- Настройте переменные окружения в .env файле и на GitHub Actions
+
+- измените IP-адрес и доменные имена в infra/nginx/default.conf
+
+- Локальный запуск приложения:
 
 ```bash
 #!/bin/bash
