@@ -100,11 +100,12 @@ sudo docker-compose exec web python manage.py collectstatic --no-input
 ```bash
 #!/bin/bash
 scp fixtures.json <username>@<domain_name or IP>:<home_dir>
-python manage.py shell
+sudo docker cp fixtures.json <container_name or container_id>:<path_to_workdir>
+sudo docker-compose exec web python manage.py shell
 >>> from django.contrib.contenttypes.models import ContentType
 >>> ContentType.objects.all().delete()
 >>> quit()
-python manage.py loaddata fixtures.json
+sudo docker-compose exec web python manage.py loaddata fixtures.json
 ```
 
 ### Авторы
