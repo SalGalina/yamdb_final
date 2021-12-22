@@ -114,6 +114,6 @@ sudo docker-compose exec web python manage.py loaddata fixtures.json
 
 ![yamdb_workflow](https://github.com/SalGalina/yamdb_final/workflows/yamdb_workflow/badge.svg)
 
-[YamDB API](http://www.gals.ml/api/v1/)
-
-[YamDB admin](http://www.gals.ml/admin/)
+YamDB: [API](http://www.gals.ml/api/v1/),
+[Админка](http://www.gals.ml/admin/),
+[Документация](http://www.gals.ml/redoc/).
